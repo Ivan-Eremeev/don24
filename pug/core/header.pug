@@ -125,9 +125,50 @@ header.header
       .container 
 
         .header__burger 
+          .hamburger.hamburger--squeeze
+            .hamburger-box
+              .hamburger-inner
         
         nav.header__nav 
+          ul.header__pagemenu 
+            li.header__pagemenu-item 
+              a(href="#").header__pagemenu-link Главная
+            li.header__pagemenu-item 
+              a(href="#").header__pagemenu-link Новости 
+            li.header__pagemenu-item 
+              a(href="#").header__pagemenu-link погода
+            li.header__pagemenu-item 
+              a(href="#").header__pagemenu-link 
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_1402_127" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="24" height="26">
+                    <path d="M13 0L24.2583 6.5V19.5L13 26L1.74167 19.5V6.5L13 0Z" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0_1402_127)">
+                    <rect x="0.764801" width="23.7059" height="8.66667" fill="#123AA0"/>
+                    <rect x="0.764771" y="8.66675" width="23.7059" height="8.66667" fill="#F7E04F"/>
+                    <rect x="0.764771" y="17.3333" width="23.7059" height="8.66667" fill="#E93F25"/>
+                  </g>
+                </svg>
+                |сделаем вместе
+            li.header__pagemenu-item 
+              a(href="#").header__pagemenu-link 
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <mask id="mask0_1402_133" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1" y="0" width="24" height="26">
+                    <path d="M13 0L24.2583 6.5V19.5L13 26L1.74167 19.5V6.5L13 0Z" fill="#C4C4C4"/>
+                  </mask>
+                  <g mask="url(#mask0_1402_133)">
+                    <rect x="0.764801" width="23.7059" height="8.66667" fill="#EAEAEA"/>
+                    <rect x="0.764771" y="8.66675" width="23.7059" height="8.66667" fill="#2053AE"/>
+                    <rect x="0.764771" y="17.3333" width="23.7059" height="8.66667" fill="#E93F25"/>
+                  </g>
+                </svg>
+                |нацпроекты
 
-        .header__search 
+        form(action="#").header__search 
+          .header__search-input 
+            input(type="text" placeholder="Поиск по сайту")
+          button(type="submit").header__search-btn 
+            svg(class="icon-zoom")
+              use(xlink:href="img/sprite.svg#zoom")
 
 //	/header
