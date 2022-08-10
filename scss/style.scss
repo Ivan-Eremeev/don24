@@ -1,0 +1,66 @@
+@import 'mixins/mixins';
+
+@include reset(); // Сброс стилей
+
+// Переменные для кастомизации Bootstrap 5
+$grid-gutter-width: 15px; // Отступы между колонками
+$grid-columns: 12; // Колличество колонок
+$grid-breakpoints: ( // Брейкпоинты
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) !default;
+$container-max-widths: ( // Максимальная ширина контейнера
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1320px
+) !default;
+$gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
+
+$gutters: (
+  0: 0,
+  1: $grid-gutter-width * 0.5,
+  2: $grid-gutter-width * 0.75,
+  3: $grid-gutter-width * 1,
+  4: $grid-gutter-width * 1.5,
+  5: $grid-gutter-width * 2,
+);
+$spacers: (
+  0: 0,
+  1: $grid-gutter-width * 0.5,
+  2: $grid-gutter-width * 0.75,
+  3: $grid-gutter-width * 1,
+  4: $grid-gutter-width * 1.5,
+  5: $grid-gutter-width * 2,
+);
+
+@import 'bootstrap/bootstrap'; // Подключение бутстрап
+
+// Шрифты
+@include font-face("Roboto", "../fonts/Roboto/roboto-v30-latin_cyrillic-regular", normal, normal);
+@include font-face("Roboto", "../fonts/Roboto/roboto-v30-latin_cyrillic-500", 500, normal);
+@include font-face("Roboto", "../fonts/Roboto/roboto-v30-latin_cyrillic-700", 700, normal);
+
+// Цвета
+$textColor: #2A2A2E;
+$primaryColor: #205DB2;
+$secondaryColor: #E84748;
+
+// Подключение файлов
+@import 'blocks/settings';
+@import 'hamburgers/hamburgers';
+// @import 'blocks/template';
+// @import 'blocks/popup';
+// @import 'blocks/tabs';
+// @import 'blocks/accordion';
+@import 'blocks/header';
+
+
+
+@import 'blocks/footer';
+// @import 'blocks/menu';
