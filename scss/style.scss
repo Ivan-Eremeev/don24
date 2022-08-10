@@ -3,7 +3,7 @@
 @include reset(); // Сброс стилей
 
 // Переменные для кастомизации Bootstrap 5
-$grid-gutter-width: 15px; // Отступы между колонками
+$grid-gutter-width: 8px; // Отступы между колонками
 $grid-columns: 12; // Колличество колонок
 $grid-breakpoints: ( // Брейкпоинты
   xs: 0,
@@ -18,7 +18,7 @@ $container-max-widths: ( // Максимальная ширина контейн
   md: 720px,
   lg: 960px,
   xl: 1140px,
-  xxl: 1320px
+  xxl: 1148px
 ) !default;
 $gutter: $grid-gutter-width; // Переменная для задания отступов равных междуколоночным
 

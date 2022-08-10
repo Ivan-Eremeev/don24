@@ -1,7 +1,7 @@
 extends core/base.pug
 
 block title 
-  title Главная
+  title Навигаця по страницам
 
 block content
 
@@ -10,12 +10,13 @@ block content
     include core/header.pug
 
     .content 
+      .container 
 
-      .navpage 
-        .wrapper
-          h1 
-          ul 
-            li 
-              a(href="template.html") Шаблон
+        .navpage 
+          .wrapper
+            h1 
+            ul 
+              li 
+                a(href="home.html") Главная
 
     include core/footer.pug
