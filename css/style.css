@@ -7805,7 +7805,7 @@ body.lock {
   left: 0;
   z-index: 2;
 }
-.popular .col:first-child .popular__item:after {
+.popular__col:first-child .popular__item:after {
   opacity: 0;
 }
 .popular__item {
@@ -7863,6 +7863,21 @@ body.lock {
   margin-right: 4px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
+}
+@media (max-width: 991.98px) {
+  .popular__col:nth-child(odd) .popular__item:after {
+    opacity: 0;
+  }
+}
+@media (max-width: 767.98px) {
+  .popular__item:after {
+    display: none;
+  }
+}
+@media (max-width: 575.98px) {
+  .popular__item {
+    padding: 15px 10px;
+  }
 }
 
 /* /popular */
@@ -7978,6 +7993,11 @@ body.lock {
   -ms-transform: scale(1.05);
   transform: scale(1.05);
 }
+@media (max-width: 575.98px) {
+  .main-news__content {
+    padding: 15px 10px;
+  }
+}
 
 /* /main-news */
 /* newsblock */
@@ -7985,7 +8005,7 @@ body.lock {
   margin-bottom: 56px;
 }
 .newsblock--mb8 {
-  margin-bottom: 8px;
+  margin-bottom: 8px !important;
 }
 .newsblock__title {
   font-weight: 700;
@@ -8069,13 +8089,163 @@ body.lock {
   height: 16px;
   margin-right: 7px;
 }
+@media (max-width: 575.98px) {
+  .newsblock {
+    margin-bottom: 30px;
+  }
+  .newsblock__title {
+    padding: 0 10px;
+  }
+  .newsblock__item {
+    padding: 15px 10px;
+  }
+}
 
 /* /newsblock */
 /* banner-big */
 .banner-big {
   margin-bottom: 54px;
 }
+@media (max-width: 575.98px) {
+  .banner-big {
+    margin-bottom: 30px;
+  }
+}
 
 /* /banner-big */
+/* newsitems */
+.newsitems {
+  margin-bottom: 8px;
+}
+.newsitems__item {
+  display: block;
+  padding: 22px 22px 20px;
+  height: 100%;
+  background-color: #fff;
+  color: #2A2A2E;
+  position: relative;
+}
+.newsitems__item--additionaly {
+  padding-bottom: 38px !important;
+}
+.newsitems__item:hover .newsitems__title {
+  color: #E84748;
+}
+.newsitems__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  margin-bottom: 16px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
+  fill: #E84748;
+}
+.newsitems__title svg {
+  width: 7px;
+  height: 13px;
+  margin-right: 7px;
+}
+.newsitems__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 38px;
+  padding: 0 20px;
+  background-color: #E84748;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  color: #fff;
+  text-transform: uppercase;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+.newsitems__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 12px;
+  line-height: 14px;
+  fill: #BABABA;
+  stroke: #BABABA;
+}
+.newsitems__date svg {
+  width: 16px;
+  height: 16px;
+  margin-right: 7px;
+}
+.newsitems__sticker {
+  padding: 6px 8px 5px;
+  font-weight: 700;
+  font-size: 8px;
+  line-height: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  background-color: #EEEEEE;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.newsitems__more {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 20px 20px 19px;
+  background-color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A2A2E;
+  fill: #CDCDCD;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.newsitems__more svg {
+  width: 9px;
+  height: 17px;
+  margin-left: 7px;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.newsitems__more:hover {
+  background-color: #205DB2;
+  color: #fff;
+  fill: #fff;
+}
+@media (max-width: 575.98px) {
+  .newsitems__item {
+    padding: 15px 10px;
+  }
+}
+
+/* /newsitems */
+/* banner-small */
+.banner-small img {
+  width: 100%;
+}
+
+/* /banner-small */
 /* footer */
 /* /footer */

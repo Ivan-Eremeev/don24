@@ -1,0 +1,107 @@
+/* newsitems */
+.newsitems { 
+  margin-bottom: 8px;
+  &__item {
+    display: block;
+    padding: 22px 22px 20px;
+    height: 100%;
+    background-color: #fff;
+    color: $textColor;
+    position: relative;
+    &--additionaly {
+      padding-bottom: 38px !important;
+    }
+    &:hover {
+      .newsitems__title {
+        color: $secondaryColor;
+      }
+    }
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 16px;
+    transition: 0.1s;
+    fill: $secondaryColor;
+    svg {
+      width: 7px;
+      height: 13px;
+      margin-right: 7px;
+    }
+  }
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 38px;
+    padding: 0 20px;
+    background-color: $secondaryColor;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  &__date {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    line-height: 14px;
+    fill: #BABABA;
+    stroke: #BABABA;
+    svg {
+      width: 16px;
+      height: 16px;
+      margin-right: 7px;
+    }
+  }
+  &__sticker {
+    padding: 6px 8px 5px;
+    font-weight: 700;
+    font-size: 8px;
+    line-height: 9px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    background-color: #EEEEEE;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+  &__more {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px 19px;
+    background-color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    color: $textColor;
+    fill: #CDCDCD;
+    transition: 0.3s;
+    svg {
+      width: 9px;
+      height: 17px;
+      margin-left: 7px;
+      transition: 0.3s;
+    }
+    &:hover {
+      background-color: $primaryColor;
+      color: #fff;
+      fill: #fff;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      padding: 15px 10px;
+    }
+  }
+}
+/* /newsitems */

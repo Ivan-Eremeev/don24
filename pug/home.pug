@@ -23,9 +23,9 @@ block content
               
                 .popular__sticker самое читаемое
                 
-                .row.g-0
+                .row.g-0.gy-3
 
-                  .col 
+                  .popular__col.col-lg.col-md-6
                     a(href="#").popular__item 
                       .popular__title Ливни и похолодание надвигаются на Ростов
                       .popular__looked 
@@ -33,7 +33,7 @@ block content
                           use(xlink:href="img/sprite.svg#eye-fill")
                         | 13297
                       
-                  .col 
+                  .popular__col.col-lg.col-md-6
                     a(href="#").popular__item 
                       .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
                       .popular__looked 
@@ -41,7 +41,7 @@ block content
                           use(xlink:href="img/sprite.svg#eye-fill")
                         | 13297
                   
-                  .col 
+                  .popular__col.col-lg.col-md-6
                     a(href="#").popular__item 
                       .popular__title Ливни и похолодание надвигаются на Ростов
                       .popular__looked 
@@ -49,7 +49,7 @@ block content
                           use(xlink:href="img/sprite.svg#eye-fill")
                         | 13297
 
-                  .col 
+                  .popular__col.col-lg.col-md-6
                     a(href="#").popular__item 
                       .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
                       .popular__looked 
@@ -57,7 +57,7 @@ block content
                           use(xlink:href="img/sprite.svg#eye-fill")
                         | 13297
 
-                  .col 
+                  .popular__col.col-lg.col-md-6
                     a(href="#").popular__item 
                       .popular__title Ливни и похолодание надвигаются на Ростов
                       .popular__looked 
@@ -84,292 +84,155 @@ block content
                   .main-news__place Новошахтинск
               // /main-news
 
-              // newsblock
-              .newsblock
+              mixin newsblock(title, dopClass)
 
-                .newsblock__title ОБЩЕСТВО
+                // newsblock
+                .newsblock(class= dopClass)
 
-                .row.gy-3
+                  .newsblock__title= title
 
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-1.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
+                  .row.gy-3
 
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-3.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-              // /newsblock
+                    .col-md-6 
+                      a(href="#").newsblock__item   
+                        .newsblock__img 
+                          img(src="img/newsblock-1.jpg", alt="")
+                        .newsblock__content 
+                          .newsblock__sticker Новошахтинск
+                          .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
+                          .newsblock__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | 15.06.2022
 
-              // newsblock
-              .newsblock.newsblock--mb8
+                    .col-md-6 
+                      a(href="#").newsblock__item   
+                        .newsblock__img 
+                          img(src="img/newsblock-2.jpg", alt="")
+                        .newsblock__content 
+                          .newsblock__sticker Новошахтинск
+                          .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
+                          .newsblock__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | 15.06.2022
+                    
+                    .col-md-6 
+                      a(href="#").newsblock__item   
+                        .newsblock__img 
+                          img(src="img/newsblock-2.jpg", alt="")
+                        .newsblock__content 
+                          .newsblock__sticker Новошахтинск
+                          .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
+                          .newsblock__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | 15.06.2022
+                    
+                    .col-md-6 
+                      a(href="#").newsblock__item   
+                        .newsblock__img 
+                          img(src="img/newsblock-3.jpg", alt="")
+                        .newsblock__content 
+                          .newsblock__sticker Новошахтинск
+                          .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
+                          .newsblock__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | 15.06.2022
+                // /newsblock
 
-                .newsblock__title ЭКОНОМИКА
+              +newsblock('ОБЩЕСТВО')
 
-                .row.gy-3
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-1.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-3.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-              // /newsblock
+              +newsblock('ЭКОНОМИКА', 'newsblock--mb8')
 
               // banner-big
               .banner-big
                 img(src="img/banner-big.jpg", alt="")
               // /banner-big
 
-              // newsblock
-              .newsblock
+              +newsblock('ПОЛИТИКА')
+              
+              +newsblock('СПОРТ')
 
-                .newsblock__title ПОЛИТИКА
-
-                .row.gy-3
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-1.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-3.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-              // /newsblock
-
-              // newsblock
-              .newsblock
-
-                .newsblock__title СПОРТ
-
-                .row.gy-3
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-1.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-3.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-              // /newsblock
-
-              // newsblock
-              .newsblock
-
-                .newsblock__title ПОЛИТИКА
-
-                .row.gy-3
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-1.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Две опасные детские игровые площадки отремонтируют в Ростовской области по
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-2.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Ордена Мужества вручили в Каменске родственникам погибших на Украине военных
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-                  
-                  .col-lg-6 
-                    a(href="#").newsblock__item   
-                      .newsblock__img 
-                        img(src="img/newsblock-3.jpg", alt="")
-                      .newsblock__content 
-                        .newsblock__sticker Новошахтинск
-                        .newsblock__subtitle Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу
-                        .newsblock__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | 15.06.2022
-              // /newsblock
+              +newsblock('ПОЛИТИКА')
 
             .col-lg-4 
+
+              // newsitems
+              .newsitems
+                .row.gy-3 
+
+                  .col-lg-12.col-md-6 
+                    a(href="#").newsitems__item.newsitems__item--additionaly
+                      .newsitems__title 
+                        svg(class="icon-lightning")
+                          use(xlink:href="img/sprite.svg#lightning")
+                        | В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                      .newsitems__info новость дополняется
+                  
+                  mixin newsitemsItem()
+                    .col-lg-12.col-md-6 
+                      a(href="#").newsitems__item 
+                        .newsitems__title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                        .newsitems__date 
+                          svg(class="icon-date-fill")
+                            use(xlink:href="img/sprite.svg#date-fill")
+                          | Сегодня в 09:00
+                        .newsitems__sticker Новошахтинск
+                  
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+                  
+                  +newsitemsItem
+                  
+              // /newsitems
+
+              // banner-small
+              .banner-small
+                img(src="img/banner-small.jpg", alt="")
+              // /banner-small
+
+              // newsitems
+              .newsitems
+                .row.gy-3 
+                  
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+                  
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+                  
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                  +newsitemsItem
+                  
+                  +newsitemsItem
+
+                  +newsitemsItem
+
+                .row.mt-3
+                  .col-lg-12.col-md-6
+                    a(href="#").newsitems__more Посмотреть еще
+                      svg(class="icon-arrow-right")
+                        use(xlink:href="img/sprite.svg#arrow-right")
+                      
+              // /newsitems
 
       // /main
 

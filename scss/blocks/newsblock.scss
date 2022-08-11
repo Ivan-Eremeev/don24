@@ -2,7 +2,7 @@
 .newsblock { 
   margin-bottom: 56px;
   &--mb8 {
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
   }
   &__title {
     font-weight: 700;
@@ -70,6 +70,15 @@
       width: 16px;
       height: 16px; 
       margin-right: 7px;
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    margin-bottom: 30px;
+    &__title {
+      padding: 0 10px;
+    }
+    &__item {
+      padding: 15px 10px;
     }
   }
 }

@@ -17,7 +17,7 @@
     left: 0;
     z-index: 2;
   }
-  .col {
+  &__col {
     &:first-child {
       .popular__item {
         &:after {
@@ -70,6 +70,29 @@
       height: 12px;
       margin-right: 4px;
       flex-shrink: 0;
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    &__col {
+      &:nth-child(odd) {
+        .popular__item {
+          &:after {
+            opacity: 0;
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(md) {
+    &__item {
+      &:after {
+        display: none;
+      }
+    }
+  }
+  @include media-breakpoint-down(sm) {
+    &__item {
+      padding: 15px 10px;
     }
   }
 }

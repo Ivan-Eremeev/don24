@@ -95,5 +95,10 @@
       }
     }
   }
+  @include media-breakpoint-down(sm) {
+    &__content {
+      padding: 15px 10px;
+    }
+  }
 }
 /* /main-news */
