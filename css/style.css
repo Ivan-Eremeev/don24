@@ -7994,6 +7994,9 @@ body.lock {
   transform: scale(1.05);
 }
 @media (max-width: 575.98px) {
+  .main-news {
+    margin-bottom: 30px;
+  }
   .main-news__content {
     padding: 15px 10px;
   }
