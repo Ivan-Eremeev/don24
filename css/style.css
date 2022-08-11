@@ -7984,6 +7984,9 @@ body.lock {
 .newsblock {
   margin-bottom: 56px;
 }
+.newsblock--mb8 {
+  margin-bottom: 8px;
+}
 .newsblock__title {
   font-weight: 700;
   font-size: 16px;
@@ -8068,5 +8071,11 @@ body.lock {
 }
 
 /* /newsblock */
+/* banner-big */
+.banner-big {
+  margin-bottom: 54px;
+}
+
+/* /banner-big */
 /* footer */
 /* /footer */

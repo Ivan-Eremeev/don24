@@ -1,6 +1,9 @@
 /* newsblock */
 .newsblock { 
   margin-bottom: 56px;
+  &--mb8 {
+    margin-bottom: 8px;
+  }
   &__title {
     font-weight: 700;
     font-size: 16px;
