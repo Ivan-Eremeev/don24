@@ -155,7 +155,7 @@ block content
               
               +newsblock('СПОРТ')
 
-              +newsblock('ПОЛИТИКА')
+              +newsblock('ЭКОНОМИКА', 'newsblock--mb8')
 
             .col-lg-4 
 
@@ -235,5 +235,33 @@ block content
               // /newsitems
 
       // /main
+
+      // social
+      .social
+        .container 
+          .social__title 
+            span Мы в социальных сетях
+          .social__text Хотите получать еще больше полезной инфомации? Подписывайтесь на нас в соцсетях! 
+          .social__icons 
+            .social__icons-row 
+              a(href="#").social__icon 
+                svg(class="icon-fb")
+                  use(xlink:href="img/sprite.svg#fb")
+              a(href="#").social__icon 
+                svg(class="icon-vk")
+                  use(xlink:href="img/sprite.svg#vk")
+              a(href="#").social__icon 
+                svg(class="icon-tw")
+                  use(xlink:href="img/sprite.svg#tw")
+              a(href="#").social__icon 
+                svg(class="icon-insta")
+                  use(xlink:href="img/sprite.svg#insta")
+              a(href="#").social__icon 
+                svg(class="icon-ok")
+                  use(xlink:href="img/sprite.svg#ok")
+              a(href="#").social__icon 
+                svg(class="icon-yt")
+                  use(xlink:href="img/sprite.svg#yt")
+      // /social
 
     include core/footer.pug
