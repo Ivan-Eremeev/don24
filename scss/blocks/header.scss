@@ -498,6 +498,33 @@
       padding: 20px 10px;
     }
   }
+  @include media-breakpoint-up(lg) {
+    &.stiky {
+      padding-bottom: 54px;
+      .header__bottom {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 11;
+        + .container {
+          position: fixed;
+          top: 54px;
+          left: 50%;
+          transform: translate(-50%,0);
+          z-index: 11;
+          .header__drop {
+            max-height: calc(100vh - 70px);
+          }
+        }
+      }
+    }
+  }
+  @include media-breakpoint-down(lg) {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+  }
   @include media-breakpoint-down(md) {
     &__container {
       max-width: 540px;

@@ -7017,6 +7017,11 @@ body.lock {
   -ms-flex-positive: 1;
   flex-grow: 1;
 }
+@media (max-width: 991.98px) {
+  .content {
+    padding-top: 57px;
+  }
+}
 
 .navpage {
   padding: 50px 0;
@@ -7030,6 +7035,60 @@ body.lock {
 }
 .navpage ul li {
   margin: 10px 0;
+}
+
+.scrollup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #205DB2;
+  fill: #fff;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  z-index: 10;
+  opacity: 0;
+  -webkit-transform: translate(0, 50px);
+  -ms-transform: translate(0, 50px);
+  transform: translate(0, 50px);
+  visibility: hidden;
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+}
+.scrollup svg {
+  width: 10px;
+  height: 10px;
+}
+.scrollup.show {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  -ms-transform: translate(0, 0);
+  transform: translate(0, 0);
+  visibility: visible;
+}
+@media (max-width: 1399.98px) {
+  .scrollup {
+    right: 20px;
+  }
+}
+@media (max-width: 575.98px) {
+  .scrollup {
+    bottom: 20px;
+  }
 }
 
 /* /settings */
@@ -7765,6 +7824,37 @@ body.lock {
   }
   .header__viewsite {
     padding: 20px 10px;
+  }
+}
+@media (min-width: 992px) {
+  .header.stiky {
+    padding-bottom: 54px;
+  }
+  .header.stiky .header__bottom {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 11;
+  }
+  .header.stiky .header__bottom + .container {
+    position: fixed;
+    top: 54px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+    transform: translate(-50%, 0);
+    z-index: 11;
+  }
+  .header.stiky .header__bottom + .container .header__drop {
+    max-height: calc(100vh - 70px);
+  }
+}
+@media (max-width: 991.98px) {
+  .header {
+    width: 100%;
+    position: fixed;
+    z-index: 11;
   }
 }
 @media (max-width: 767.98px) {
