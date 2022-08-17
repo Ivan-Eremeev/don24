@@ -68,4 +68,24 @@ window.onload = function () {
   }
   scrollUp();
 
+  // Открытие подменю на мобилке
+  function openSubmenu() {
+    let link = $('.header__menu-link');
+    let submenu = $('.header__submenu');
+    link.on('click', function (e) {
+      let currentLink = $(this);
+      if ($(window).width() <= 991) {
+        e.preventDefault();
+        submenu.stop().slideUp(300);
+        currentLink.next('.header__submenu').stop().slideToggle(300);
+      }
+    });
+    $(window).resize(function () {
+      if ($(window).width() > 991) {
+        submenu.removeAttr('style');
+      }
+    });
+  }
+  openSubmenu();
+
 }

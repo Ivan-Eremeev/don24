@@ -7356,7 +7356,7 @@ body.lock {
   fill: #E84748;
 }
 .header__submenu {
-  min-width: 100%;
+  width: 100%;
   min-width: 200px;
   background-color: #EEEEEE;
   position: absolute;
@@ -7855,6 +7855,12 @@ body.lock {
     width: 100%;
     position: fixed;
     z-index: 11;
+  }
+  .header__submenu {
+    display: none;
+    -webkit-transition: none;
+    -o-transition: none;
+    transition: none;
   }
 }
 @media (max-width: 767.98px) {

@@ -96,7 +96,7 @@
     }
   }
   &__submenu {
-    min-width: 100%;
+    width: 100%;
     min-width: 200px;
     background-color: #EEEEEE;
     position: absolute;
@@ -524,6 +524,10 @@
     width: 100%;
     position: fixed;
     z-index: 11;
+    &__submenu {
+      display: none;
+      transition: none;
+    }
   }
   @include media-breakpoint-down(md) {
     &__container {
