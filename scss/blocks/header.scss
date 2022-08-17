@@ -161,10 +161,16 @@
   &__logo {
     display: inline-block;
     max-width: 260px;
+    img {
+      max-height: 68px;
+    }
   }
   &__banner {
     max-width: 490px;
     margin: 0 10px;
+    img {
+      max-height: 96px;
+    }
   }
   &__social {
     ul {
