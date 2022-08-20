@@ -96,4 +96,18 @@
     }
   }
 }
+
+body.dark {
+  .popular {
+    &__item {
+      background-color: $grayColor;
+      color: #fff;
+      &:hover {
+        .popular__title {
+          color: $primaryColor;
+        }
+      }
+    }
+  }
+}
 /* /popular */

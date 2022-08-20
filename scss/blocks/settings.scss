@@ -24,6 +24,16 @@ body {
   &.lock {
     overflow: hidden;
   }
+  &.dark {
+    background-color: #212121;
+    color: #fff;
+    button,
+    input,
+    textarea {
+      background-color: $grayColor;
+      color: #fff;
+    }
+  }
 }
 .mobile-hide {
   @include media-breakpoint-down(sm) {

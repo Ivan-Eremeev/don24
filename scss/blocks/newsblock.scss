@@ -82,4 +82,21 @@
     }
   }
 }
+
+body.dark {
+  .newsblock {
+    &__item {
+      background-color: $grayColor;
+      color: #fff;
+      &:hover {
+        .newsblock__subtitle {
+          color: $primaryColor;
+        }
+      }
+    }
+    &__sticker {
+      background-color: #4D4D4D;
+    }
+  }
+}
 /* /newsblock */

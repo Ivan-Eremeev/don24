@@ -104,4 +104,28 @@
     }
   }
 }
+
+body.dark {
+  .newsitems {
+    &__item {
+      background-color: $grayColor;
+      color: #fff;
+      &:hover {
+        .newsitems__title {
+          color: $primaryColor;
+        }
+      }
+    }
+    &__sticker {
+      background-color: #4D4D4D;
+    }
+    &__more {
+      background-color: $grayColor;
+      color: #fff;
+      &:hover {
+        background-color: $primaryColor;
+      }
+    }
+  }
+}
 /* /newsitems */

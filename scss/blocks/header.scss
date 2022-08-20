@@ -204,7 +204,8 @@
     }
   }
   &__mobile {
-    
+    box-shadow: 10px 0 10px rgba(0,0,0,.1);
+    padding: 5px 0;
   }
   &__container {
     position: relative;
@@ -279,7 +280,7 @@
     justify-content: center;
     align-items: center;
     width: 36px;
-    background-color: $secondaryColor;
+    background-color: $secondaryColor !important;
     border: none;
     outline: none;
     fill: #fff;
@@ -543,6 +544,105 @@
   @include media-breakpoint-down(sm) {
     &__container {
       max-width: none;
+    }
+  }
+}
+
+body.dark {
+  .header {
+    &__top {
+      background-color: $grayColor;
+      .container {
+        background: transparent !important;
+      }
+    }
+    &__menu-link {
+      color: #fff;
+      .icon-arrow-down {
+        fill: #fff;
+      }
+      &:after {
+        background-color: $primaryColor;
+      }
+      &:hover {
+        color: $primaryColor;
+        .icon-arrow-down {
+          fill: $primaryColor;
+        }
+      }
+    }
+    &__menu-item {
+      &:hover {
+        .header__menu-link {
+          color: $primaryColor;
+          .icon-arrow-down {
+            fill: $primaryColor;
+          }
+        }
+      }
+    }
+    &__submenu {
+      background-color: $grayColor;
+    }
+    &__submenu-link {
+      color: #fff;
+      
+      &:hover {
+        background-color: #4d4d4d;
+      }
+    }
+    &__middle {
+      background-color: #212121;
+    }
+    &__search-input {
+      input {
+        background-color: $grayColor;
+      }
+    }
+    &__drop {
+      background-color: $grayColor;
+      color: #fff;
+    }
+    &__drop-list {
+      li {
+        a {
+          color: #fff;
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+      }
+    }
+    &__mobile {
+      background-color: $grayColor;
+    }
+    &__mobile-burger {
+      .hamburger-inner {
+        background-color: #fff;
+        &:after, &:before {
+          background-color: #fff;
+        }
+      }
+      .hamburger {
+        &.is-active {
+          .hamburger-inner {
+            background-color: #fff;
+            &:after, &:before {
+              background-color: #fff;
+            }
+          }
+        }
+      }
+    }
+    &__theme-switch {
+      background-color: #fff;
+      border: 1px solid #212121;
+      svg {
+        fill: #212121;
+      }
+      &:after {
+        background-color: #212121;
+      }
     }
   }
 }

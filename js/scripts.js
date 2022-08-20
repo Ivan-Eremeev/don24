@@ -88,4 +88,12 @@ window.onload = function () {
   }
   openSubmenu();
 
+  // Переключение темы сайта
+  function themeSwitch() {
+    $('.theme-switch').on('click', function () {
+      $('body').toggleClass('dark');
+    })
+  }
+  themeSwitch();
+
 }
