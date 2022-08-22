@@ -504,6 +504,17 @@
     &__viewsite {
       padding: 20px 10px;
     }
+    &__banner {
+      max-width: none;
+      width: 100%;
+      margin-left: 0;
+      margin-bottom: 8px;
+      img {
+        width: 100%;
+        max-height: none;
+        display: block;
+      }
+    }
   }
   @include media-breakpoint-up(lg) {
     &.stiky {

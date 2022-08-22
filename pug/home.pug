@@ -18,55 +18,58 @@ block content
 
             .col-lg-12
 
-              // popular
-              .popular
-              
-                .popular__sticker самое читаемое
+                .header__banner.d-lg-none
+                  img(src="img/header_banner.jpg", alt="") 
+
+                // popular
+                .popular
                 
-                .row.g-0.gy-3
-
-                  .popular__col.col-lg.col-md-6
-                    a(href="#").popular__item 
-                      .popular__title Ливни и похолодание надвигаются на Ростов
-                      .popular__looked 
-                        svg(class="icon-eye-fill")
-                          use(xlink:href="img/sprite.svg#eye-fill")
-                        | 13297
-                      
-                  .popular__col.col-lg.col-md-6
-                    a(href="#").popular__item 
-                      .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
-                      .popular__looked 
-                        svg(class="icon-eye-fill")
-                          use(xlink:href="img/sprite.svg#eye-fill")
-                        | 13297
+                  .popular__sticker самое читаемое
                   
-                  .popular__col.col-lg.col-md-6
-                    a(href="#").popular__item 
-                      .popular__title Ливни и похолодание надвигаются на Ростов
-                      .popular__looked 
-                        svg(class="icon-eye-fill")
-                          use(xlink:href="img/sprite.svg#eye-fill")
-                        | 13297
+                  .row.g-0.gy-3
 
-                  .popular__col.col-lg.col-md-6
-                    a(href="#").popular__item 
-                      .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
-                      .popular__looked 
-                        svg(class="icon-eye-fill")
-                          use(xlink:href="img/sprite.svg#eye-fill")
-                        | 13297
+                    .popular__col.col-lg.col-md-6
+                      a(href="#").popular__item 
+                        .popular__title Ливни и похолодание надвигаются на Ростов
+                        .popular__looked 
+                          svg(class="icon-eye-fill")
+                            use(xlink:href="img/sprite.svg#eye-fill")
+                          | 13297
+                        
+                    .popular__col.col-lg.col-md-6
+                      a(href="#").popular__item 
+                        .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
+                        .popular__looked 
+                          svg(class="icon-eye-fill")
+                            use(xlink:href="img/sprite.svg#eye-fill")
+                          | 13297
+                    
+                    .popular__col.col-lg.col-md-6
+                      a(href="#").popular__item 
+                        .popular__title Ливни и похолодание надвигаются на Ростов
+                        .popular__looked 
+                          svg(class="icon-eye-fill")
+                            use(xlink:href="img/sprite.svg#eye-fill")
+                          | 13297
 
-                  .popular__col.col-lg.col-md-6
-                    a(href="#").popular__item 
-                      .popular__title Ливни и похолодание надвигаются на Ростов
-                      .popular__looked 
-                        svg(class="icon-eye-fill")
-                          use(xlink:href="img/sprite.svg#eye-fill")
-                        | 13297
-              // /popular
+                    .popular__col.col-lg.col-md-6
+                      a(href="#").popular__item 
+                        .popular__title Виновник ДТП погиб: под Ростовом легковушка выехала на встречку 
+                        .popular__looked 
+                          svg(class="icon-eye-fill")
+                            use(xlink:href="img/sprite.svg#eye-fill")
+                          | 13297
 
-            .col-lg-8 
+                    .popular__col.col-lg.col-md-6
+                      a(href="#").popular__item 
+                        .popular__title Ливни и похолодание надвигаются на Ростов
+                        .popular__looked 
+                          svg(class="icon-eye-fill")
+                            use(xlink:href="img/sprite.svg#eye-fill")
+                          | 13297
+                // /popular
+
+            .col-lg-8
 
               // main-news
               a(href="#").main-news
@@ -83,6 +86,8 @@ block content
                     | 15.06.2022
                   .main-news__place Новошахтинск
               // /main-news
+
+              #newsitemsTo
 
               mixin newsblock(title, dopClass)
 
@@ -159,80 +164,82 @@ block content
 
             .col-lg-4 
 
-              // newsitems
-              .newsitems
-                .row.gy-3 
+              #newsitemsFrom
+                #newsitems
+                  // newsitems
+                  .newsitems
+                    .row.gy-3 
 
-                  .col-lg-12.col-md-6 
-                    a(href="#").newsitems__item.newsitems__item--additionaly
-                      .newsitems__title 
-                        svg(class="icon-lightning")
-                          use(xlink:href="img/sprite.svg#lightning")
-                        | В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
-                      .newsitems__info новость дополняется
-                  
-                  mixin newsitemsItem()
-                    .col-lg-12.col-md-6 
-                      a(href="#").newsitems__item 
-                        .newsitems__title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
-                        .newsitems__date 
-                          svg(class="icon-date-fill")
-                            use(xlink:href="img/sprite.svg#date-fill")
-                          | Сегодня в 09:00
-                        .newsitems__sticker Новошахтинск
-                  
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-                  
-                  +newsitemsItem
-                  
-              // /newsitems
-
-              // banner-small
-              .banner-small
-                img(src="img/banner-small.jpg", alt="")
-              // /banner-small
-
-              // newsitems
-              .newsitems
-                .row.gy-3 
-                  
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-                  
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-                  
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                  +newsitemsItem
-                  
-                  +newsitemsItem
-
-                  +newsitemsItem
-
-                .row.mt-3
-                  .col-lg-12.col-md-6
-                    a(href="#").newsitems__more Посмотреть еще
-                      svg(class="icon-arrow-right")
-                        use(xlink:href="img/sprite.svg#arrow-right")
+                      .col-lg-12.col-md-6 
+                        a(href="#").newsitems__item.newsitems__item--additionaly
+                          .newsitems__title 
+                            svg(class="icon-lightning")
+                              use(xlink:href="img/sprite.svg#lightning")
+                            | В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                          .newsitems__info новость дополняется
                       
-              // /newsitems
+                      mixin newsitemsItem()
+                        .col-lg-12.col-md-6 
+                          a(href="#").newsitems__item 
+                            .newsitems__title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                            .newsitems__date 
+                              svg(class="icon-date-fill")
+                                use(xlink:href="img/sprite.svg#date-fill")
+                              | Сегодня в 09:00
+                            .newsitems__sticker Новошахтинск
+                      
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+                      
+                      +newsitemsItem
+                      
+                  // /newsitems
+
+                  // banner-small
+                  .banner-small
+                    img(src="img/banner-small.jpg", alt="")
+                  // /banner-small
+
+                  // newsitems
+                  .newsitems
+                    .row.gy-3 
+                      
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+                      
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+                      
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                      +newsitemsItem
+                      
+                      +newsitemsItem
+
+                      +newsitemsItem
+
+                    .row.mt-3
+                      .col-lg-12.col-md-6
+                        a(href="#").newsitems__more Посмотреть еще
+                          svg(class="icon-arrow-right")
+                            use(xlink:href="img/sprite.svg#arrow-right")
+                          
+                  // /newsitems
 
       // /main
 
