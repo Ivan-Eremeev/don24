@@ -8355,6 +8355,7 @@ body.dark .newsblock__sticker {
 }
 .newsitems__item--additionaly {
   padding-bottom: 38px !important;
+  border: 2px solid #E84748;
 }
 .newsitems__item:hover .newsitems__title {
   color: #E84748;

@@ -10,6 +10,7 @@
     position: relative;
     &--additionaly {
       padding-bottom: 38px !important;
+      border: 2px solid $secondaryColor;
     }
     &:hover {
       .newsitems__title {
