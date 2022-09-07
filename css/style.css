@@ -7107,6 +7107,11 @@ body.dark textarea {
   line-height: 28px;
   text-transform: uppercase;
 }
+@media (max-width: 767.98px) {
+  .title {
+    font-size: 18px;
+  }
+}
 
 /* /settings */
 /*!
@@ -8662,11 +8667,21 @@ body.dark .newsitems__more:hover {
 .breadcrumbs ul li span {
   color: #9F9F9F;
 }
+@media (max-width: 767.98px) {
+  .breadcrumbs {
+    padding: 30px 0 15px;
+  }
+}
 
 /* /breadcrumbs */
 /* category */
 .category .title {
   margin-bottom: 24px;
+}
+@media (max-width: 767.98px) {
+  .category .title {
+    margin-bottom: 15px;
+  }
 }
 
 /* /category */

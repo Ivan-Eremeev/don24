@@ -3,5 +3,10 @@
   .title {
     margin-bottom: 24px;
   }
+  @include media-breakpoint-down(md) {
+    .title {
+      margin-bottom: 15px;
+    }
+  }
 }
 /* /category */
