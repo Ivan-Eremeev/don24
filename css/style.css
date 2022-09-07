@@ -7105,6 +7105,7 @@ body.dark textarea {
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
+  text-transform: uppercase;
 }
 
 /* /settings */
@@ -8691,9 +8692,9 @@ body.dark .newsitems__more:hover {
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .pagination__arrow svg {
   width: 12px;
@@ -8724,16 +8725,18 @@ body.dark .newsitems__more:hover {
   width: 30px;
   height: 30px;
   border-radius: 2px;
+  border: 1px solid transparent;
   font-size: 12px;
   color: #2A2A2E;
 }
 .pagination__list li a:hover {
   color: #205DB2;
+  border-color: #205DB2;
 }
 .pagination__list li a.active {
   background: #FFFFFF;
-  border: 1px solid #DCDCDC;
   color: #2A2A2E;
+  border-color: #DCDCDC;
 }
 
 /* /pagination */
