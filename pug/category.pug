@@ -1,0 +1,232 @@
+extends core/base.pug
+
+block title 
+  title Категория
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // breadcrumbs
+      .breadcrumbs
+        .container 
+          ul 
+            li 
+              a(href="#") Главная
+            li 
+              span Политика
+      // /breadcrumbs
+
+      // category
+      .category
+        .container 
+
+          h1.title #политика
+
+          .row.gy-3
+            .col-lg-8 
+              .category__newsblocks
+                .row.gy-3
+                  .col-lg-6 
+                    mixin newsblock(title, img)
+                      a(href="#").newsblock__item   
+                        if img
+                          .newsblock__img 
+                            img(src= img , alt="")
+                        .newsblock__content 
+                          .newsblock__sticker Новошахтинск
+                          .newsblock__subtitle= title 
+                          .newsblock__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | 15.06.2022
+
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+                  .col-lg-6 
+                    +newsblock('Две опасные детские игровые площадки отремонтируют в Ростовской области по')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Ордена Мужества вручили в Каменске родственникам погибших на Украине военных', 'img/newsblock-2.jpg')
+                  .col-lg-6 
+                    +newsblock('Глазастый и редкий: в центре Ростова обнаружили краснокнижную птицу', 'img/newsblock-3.jpg')
+
+            .col-lg-4
+              .category__newsitems
+                // newsitems
+                .newsitems
+                  .row.gy-3 
+
+                    .col-lg-12.col-md-6 
+                      a(href="#").newsitems__item.newsitems__item--additionaly
+                        .newsitems__title 
+                          svg(class="icon-lightning")
+                            use(xlink:href="img/sprite.svg#lightning")
+                          | В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                        .newsitems__info новость дополняется
+                    
+                    mixin newsitemsItem()
+                      .col-lg-12.col-md-6 
+                        a(href="#").newsitems__item 
+                          .newsitems__title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                          .newsitems__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | Сегодня в 09:00
+                          .newsitems__sticker Новошахтинск
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+                    
+                // /newsitems
+
+                // banner-small
+                .banner-small
+                  img(src="img/banner-small.jpg", alt="")
+                // /banner-small
+
+                // newsitems
+                .newsitems
+                  .row.gy-3 
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                  .row.mt-3
+                    .col-lg-12.col-md-6
+                      a(href="#").newsitems__more Посмотреть еще
+                        svg(class="icon-arrow-right")
+                          use(xlink:href="img/sprite.svg#arrow-right")
+                        
+                // /newsitems
+
+      // /category
+
+      // pagination
+      .pagination
+        .container 
+          .d-flex 
+            .pagination__arrow 
+              svg(class="icon-arrow-pagination-left")
+                use(xlink:href="img/sprite.svg#arrow-pagination-left")
+            ul.pagination__list 
+              li 
+                a(href="#").active 1
+              li 
+                a(href="#") 2
+              li 
+                a(href="#") 3
+              li 
+                a(href="#") 4
+            .pagination__arrow 
+              svg(class="icon-arrow-pagination-right")
+                use(xlink:href="img/sprite.svg#arrow-pagination-right")
+      // /pagination
+
+      // social
+      .social
+        .container 
+          .social__title 
+            span Мы в социальных сетях
+          .social__text Хотите получать еще больше полезной инфомации? Подписывайтесь на нас в соцсетях! 
+          .social__icons 
+            .social__icons-row 
+              a(href="#").social__icon 
+                svg(class="icon-fb")
+                  use(xlink:href="img/sprite.svg#fb")
+              a(href="#").social__icon 
+                svg(class="icon-vk")
+                  use(xlink:href="img/sprite.svg#vk")
+              a(href="#").social__icon 
+                svg(class="icon-tw")
+                  use(xlink:href="img/sprite.svg#tw")
+              a(href="#").social__icon 
+                svg(class="icon-insta")
+                  use(xlink:href="img/sprite.svg#insta")
+              a(href="#").social__icon 
+                svg(class="icon-ok")
+                  use(xlink:href="img/sprite.svg#ok")
+              a(href="#").social__icon 
+                svg(class="icon-yt")
+                  use(xlink:href="img/sprite.svg#yt")
+      // /social
+
+    include core/footer.pug
