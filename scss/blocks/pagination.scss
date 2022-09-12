@@ -47,4 +47,24 @@
     }
   }
 }
+
+body.dark {
+  .pagination {
+    &__list {
+      li {
+        a {
+          color: #fff;
+          &:hover {
+            color: $primaryColor;
+          }
+          &.active {
+            background: #FFFFFF;
+            color: $textColor;
+            border-color: #DCDCDC;
+          }
+        }
+      }
+    }
+  }
+}
 /* /pagination */

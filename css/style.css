@@ -8673,6 +8673,13 @@ body.dark .newsitems__more:hover {
   }
 }
 
+body.dark .breadcrumbs ul li a {
+  color: #fff;
+}
+body.dark .breadcrumbs ul li a:hover {
+  color: #205DB2;
+}
+
 /* /breadcrumbs */
 /* category */
 .category .title {
@@ -8749,6 +8756,18 @@ body.dark .newsitems__more:hover {
   border-color: #205DB2;
 }
 .pagination__list li a.active {
+  background: #FFFFFF;
+  color: #2A2A2E;
+  border-color: #DCDCDC;
+}
+
+body.dark .pagination__list li a {
+  color: #fff;
+}
+body.dark .pagination__list li a:hover {
+  color: #205DB2;
+}
+body.dark .pagination__list li a.active {
   background: #FFFFFF;
   color: #2A2A2E;
   border-color: #DCDCDC;
