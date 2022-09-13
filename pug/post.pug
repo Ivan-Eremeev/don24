@@ -1,0 +1,130 @@
+extends core/base.pug
+
+block title 
+  title Навигаця по страницам
+
+block content
+
+  .page 
+
+    include core/header.pug
+
+    .content 
+
+      // post
+      .post
+        .container
+      
+          .row.gy-3 
+            
+            .col-lg-8 
+
+              // breadcrumbs
+              .breadcrumbs
+                ul 
+                  li 
+                    a(href="#") Главная
+                  li 
+                    a(href="#") #Политика
+                  li 
+                    span Владимир Путин назначил 13 судей, председателей и заместителей в судах Ростовской области
+              // /breadcrumbs
+
+              h1.title Владимир Путин назначил 13 судей, председателей и заместителей в судах Ростовской области
+
+              .post__date 
+                svg(class="icon-date-fill")
+                  use(xlink:href="img/sprite.svg#date-fill")
+                | 15.06.2022
+              
+              .post__img 
+                img(src="img/post.jpg", alt="")
+              
+              .post__img-autor Фото: Виктория Корнеева / АО «Дон-медиа» / don24.ru. ©
+              
+              .post__text 
+                p Ростовская область, 22 августа 2022. DON24.RU. Президент России Владимир Путин утвердил 13 судебных должностей в Ростовской области. Соответствующий указ появился на портале правовой информации.
+                p Согласно документу, судьями Батайского городского суда станут Антон Морозов и Ольга Шишина. В Белокалитвинском районе должность судьи займет Филипп Избенко. В Мартыновском районе президент утвердил кандидатуру Инны Большаковой, а в Цимлянском – Руслана Гаврилова.
+                p В самом Ростове-на-Дону также появятся три новых судьи. В Ворошиловском районе – Лилия Усачева, в Железнодорожном – Николай Смирнов и в Советском – Анастасия Перекрестова.
+                p Также председателями судов стали в Каменском районе – Олег Миронов, а в Ремонтненском – Денис Щетинин. Заместителями председателей Зерноградского районного и Таганрогского городского судов были назначены Эрик Исаян и Олег Алейнер соответственно.
+
+              .post__more 
+                .post__more-img 
+                  img(src="img/newsblock-4.jpg", alt="")
+                .post__more-content 
+                  .post__more-sticker Читайте также
+                  .post__more-title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                  .post__more-date 
+                    svg(class="icon-date-fill")
+                      use(xlink:href="img/sprite.svg#date-fill")
+                    | 15.06.2022
+            
+            .col-lg-4 
+
+              .post__newsitems 
+                // newsitems
+                .newsitems
+                  .row.gy-3 
+                    
+                    mixin newsitemsItem()
+                      .col-lg-12.col-md-6 
+                        a(href="#").newsitems__item 
+                          .newsitems__title В Москве задержали банду телефонных мошенников, обманывавших пенсионеров
+                          .newsitems__date 
+                            svg(class="icon-date-fill")
+                              use(xlink:href="img/sprite.svg#date-fill")
+                            | Сегодня в 09:00
+                          .newsitems__sticker Новошахтинск
+                    
+                    +newsitemsItem
+                    
+                // /newsitems
+
+                // banner-small
+                .banner-small
+                  img(src="img/banner-small.jpg", alt="")
+                // /banner-small
+
+                // newsitems
+                .newsitems
+                  .row.gy-3 
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+                        
+                // /newsitems
+
+                // banner-small
+                .banner-small
+                  img(src="img/banner-small.jpg", alt="")
+                // /banner-small
+
+                // newsitems
+                .newsitems
+                  .row.gy-3 
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+
+                    +newsitemsItem
+                    
+                    +newsitemsItem
+                        
+                // /newsitems
+      // /post
+
+    include core/footer.pug
