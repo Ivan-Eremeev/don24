@@ -8835,6 +8835,10 @@ body.dark .pagination__list li a.active {
   padding: 12px;
   background-color: #fff;
   margin-bottom: 17px;
+  color: #2A2A2E;
+}
+.post__more:hover .post__more-title {
+  color: #E84748;
 }
 .post__more-img {
   width: 214px;
@@ -8864,6 +8868,9 @@ body.dark .pagination__list li a.active {
   font-size: 14px;
   line-height: 16px;
   margin-bottom: 23px;
+  -webkit-transition: 0.1s;
+  -o-transition: 0.1s;
+  transition: 0.1s;
 }
 .post__more-date {
   display: -webkit-box;
@@ -8883,6 +8890,20 @@ body.dark .pagination__list li a.active {
   margin-right: 6px;
   fill: #BABABA;
   stroke: #BABABA;
+}
+
+body.dark .post__text {
+  background-color: #808080;
+}
+body.dark .post__more {
+  background-color: #808080;
+  color: #fff;
+}
+body.dark .post__more:hover .post__more-title {
+  color: #205DB2;
+}
+body.dark .post__more-sticker {
+  background-color: #4D4D4D;
 }
 
 /* /post */

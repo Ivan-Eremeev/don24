@@ -47,6 +47,12 @@
     padding: 12px;
     background-color: #fff;
     margin-bottom: 17px;
+    color: $textColor;
+    &:hover {
+      .post__more-title {
+        color: $secondaryColor;
+      }
+    }
   }
   &__more-img {
     width: 214px;
@@ -77,6 +83,7 @@
     font-size: 14px;
     line-height: 16px;
     margin-bottom: 23px;
+    transition: 0.1s;
   }
   &__more-date {
     display: flex;
@@ -90,6 +97,26 @@
       margin-right: 6px;
       fill: #BABABA;
       stroke: #BABABA;
+    }
+  }
+}
+
+body.dark {
+  .post {
+    &__text {
+      background-color: $grayColor;
+    }
+    &__more {
+      background-color: $grayColor;
+      color: #fff;
+      &:hover {
+        .post__more-title {
+          color: $primaryColor;
+        }
+      }
+    }
+    &__more-sticker {
+      background-color: #4D4D4D;
     }
   }
 }
