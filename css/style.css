@@ -8113,6 +8113,10 @@ body.dark .header__theme-switch:after {
   .popular__item:after {
     display: none;
   }
+  .popular > .row {
+    max-height: 120px;
+    overflow-y: auto;
+  }
 }
 @media (max-width: 575.98px) {
   .popular__item {

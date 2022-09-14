@@ -89,6 +89,10 @@
         display: none;
       }
     }
+    > .row {
+      max-height: 120px;
+      overflow-y: auto;
+    }
   }
   @include media-breakpoint-down(sm) {
     &__item {
