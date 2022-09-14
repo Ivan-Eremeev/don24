@@ -117,12 +117,20 @@ window.onload = function () {
   // Swiper
   if ($('#postSlider').length) {
     const swiper = new Swiper('#postSlider', {
-      slidesPerView: 2.3,
+      slidesPerView: 1.3,
       spaceBetween: 8,
       navigation: {
         nextEl: '.post__slider-button--next',
         prevEl: '.post__slider-button--prev',
       },
+      breakpoints: {
+        380: {
+          slidesPerView: 2.1,
+        },
+        576: {
+          slidesPerView: 2.3,
+        }
+      }
     });
   }
 
