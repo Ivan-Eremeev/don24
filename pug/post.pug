@@ -61,7 +61,21 @@ block content
                         use(xlink:href="img/sprite.svg#date-fill")
                       | 15.06.2022
 
-                .post__
+                .post__interaction
+                  .post__interaction-text Денис Архипов ИА «ДОН 24»
+                  a(href="#").post__yandex-btn
+                    img(src="img/yandex-news.jpg", alt="")
+                  a(href="#").post__yandex-btn 
+                    img(src="img/yandex-dzen.jpg", alt="")
+                  .post__likes 
+                    .post__like.post__like--up 
+                      svg(class="icon-like")
+                        use(xlink:href="img/sprite.svg#like")
+                      | 4
+                    .post__like.post__like--down 
+                      svg(class="icon-like")
+                        use(xlink:href="img/sprite.svg#like")
+                      | 0
 
                 .post__tags 
                   .post__tags-label 
@@ -100,6 +114,47 @@ block content
                     a(href="#").post__social-icon 
                       svg(class="icon-tg")
                         use(xlink:href="img/sprite.svg#tg")
+
+                .post__slider 
+                  .post__slider-title СМИ2 НОВОСТИ ПАРТНЕРОВ
+                  #postSlider 
+                    .swiper-wrapper 
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-1.jpg", alt="")
+                          .post__slide-title Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-2.jpg", alt="")
+                          .post__slide-title МВД объявило награду 1 млн рублей за помощь в задержании двух командиров «Азова»
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-3.jpg", alt="")
+                          .post__slide-title Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-1.jpg", alt="")
+                          .post__slide-title Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-2.jpg", alt="")
+                          .post__slide-title МВД объявило награду 1 млн рублей за помощь в задержании двух командиров «Азова»
+                      .swiper-slide
+                        a(href="#").post__slide 
+                          .post__slide-img 
+                            img(src="img/news-partners-3.jpg", alt="")
+                          .post__slide-title Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.
+                    .swiper-button-prev.post__slider-button.post__slider-button--prev
+                      svg(class="icon-arrow-pagination-left")
+                        use(xlink:href="img/sprite.svg#arrow-pagination-left")
+                    .swiper-button-next.post__slider-button.post__slider-button--next
+                      svg(class="icon-arrow-pagination-right")
+                        use(xlink:href="img/sprite.svg#arrow-pagination-right")
             
             .col-lg-4 
 

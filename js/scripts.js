@@ -114,4 +114,16 @@ window.onload = function () {
 	}
   replace($('#newsitems'), $('#newsitemsTo'), $('#newsitemsFrom'), 991);
 
+  // Swiper
+  if ($('#postSlider').length) {
+    const swiper = new Swiper('#postSlider', {
+      slidesPerView: 2.3,
+      spaceBetween: 8,
+      navigation: {
+        nextEl: '.post__slider-button--next',
+        prevEl: '.post__slider-button--prev',
+      },
+    });
+  }
+
 }

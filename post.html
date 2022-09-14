@@ -8,6 +8,7 @@
 		<meta name="description" content="">
 		<meta name="robots" content="noindex, nofollow">
 		<title>Навигаця по страницам</title>
+		<link rel="stylesheet" href="css/plugins/swiper-bundle.min.css">
 		<link rel="stylesheet" href="css/style.css">
 	</head>
 	<body> 
@@ -294,7 +295,21 @@
 												</svg>15.06.2022
 											</div>
 										</div></a>
-									<div class="post__"></div>
+									<div class="post__interaction">
+										<div class="post__interaction-text">Денис Архипов ИА «ДОН 24»</div><a class="post__yandex-btn" href="#"><img src="img/yandex-news.jpg" alt=""></a><a class="post__yandex-btn" href="#"> <img src="img/yandex-dzen.jpg" alt=""></a>
+										<div class="post__likes"> 
+											<div class="post__like post__like--up"> 
+												<svg class="icon-like">
+													<use xlink:href="img/sprite.svg#like"></use>
+												</svg>4
+											</div>
+											<div class="post__like post__like--down"> 
+												<svg class="icon-like">
+													<use xlink:href="img/sprite.svg#like"></use>
+												</svg>0
+											</div>
+										</div>
+									</div>
 									<div class="post__tags"> 
 										<div class="post__tags-label"> 
 											<svg class="icon-label">
@@ -329,6 +344,41 @@
 												<svg class="icon-tg">
 													<use xlink:href="img/sprite.svg#tg"></use>
 												</svg></a></div>
+									</div>
+									<div class="post__slider"> 
+										<div class="post__slider-title">СМИ2 НОВОСТИ ПАРТНЕРОВ</div>
+										<div id="postSlider"> 
+											<div class="swiper-wrapper"> 
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-1.jpg" alt=""></div>
+														<div class="post__slide-title">Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.</div></a></div>
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-2.jpg" alt=""></div>
+														<div class="post__slide-title">МВД объявило награду 1 млн рублей за помощь в задержании двух командиров «Азова»</div></a></div>
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-3.jpg" alt=""></div>
+														<div class="post__slide-title">Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.</div></a></div>
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-1.jpg" alt=""></div>
+														<div class="post__slide-title">Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.</div></a></div>
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-2.jpg" alt=""></div>
+														<div class="post__slide-title">МВД объявило награду 1 млн рублей за помощь в задержании двух командиров «Азова»</div></a></div>
+												<div class="swiper-slide"><a class="post__slide" href="#"> 
+														<div class="post__slide-img"> <img src="img/news-partners-3.jpg" alt=""></div>
+														<div class="post__slide-title">Евгений Ройзман задержан по статье о дискредитации ВС России. Пидарасы блять.</div></a></div>
+											</div>
+											<div class="swiper-button-prev post__slider-button post__slider-button--prev">
+												<svg class="icon-arrow-pagination-left">
+													<use xlink:href="img/sprite.svg#arrow-pagination-left"></use>
+												</svg>
+											</div>
+											<div class="swiper-button-next post__slider-button post__slider-button--next">
+												<svg class="icon-arrow-pagination-right">
+													<use xlink:href="img/sprite.svg#arrow-pagination-right"></use>
+												</svg>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -561,6 +611,7 @@
 			</div>
 		</div>
 		<script src="js/jquery.min.js"> </script>
+		<script src="js/plugins/swiper-bundle.min.js"> </script>
 		<script src="js/scripts.js"></script>
 	</body>
 </html>
