@@ -134,4 +134,17 @@ window.onload = function () {
     });
   }
 
+  // Sticky Sidebar
+  if ($('.js-sticky').length) {
+    var stickySidebar = new StickySidebar('.js-sticky', {
+      topSpacing: 65,
+      bottomSpacing: 10,
+      // containerSelector: false,
+      // innerWrapperSelector: '.sidebar__inner',
+      // resizeSensor: true,
+      // stickyClass: 'is-affixed',
+      // minWidth: 0
+    });
+  }
+
 }
