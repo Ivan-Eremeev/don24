@@ -115,23 +115,48 @@ window.onload = function () {
   replace($('#newsitems'), $('#newsitemsTo'), $('#newsitemsFrom'), 991);
 
   // Swiper
-  if ($('#postSlider').length) {
-    const swiper = new Swiper('#postSlider', {
-      slidesPerView: 1.3,
-      spaceBetween: 8,
-      navigation: {
-        nextEl: '.post__slider-button--next',
-        prevEl: '.post__slider-button--prev',
-      },
-      breakpoints: {
-        380: {
-          slidesPerView: 2.1,
+  // if ($('#postSlider').length) {
+  //   const swiper = new Swiper('#postSlider', {
+  //     slidesPerView: 1.3,
+  //     spaceBetween: 8,
+  //     navigation: {
+  //       nextEl: '.post__slider-button--next',
+  //       prevEl: '.post__slider-button--prev',
+  //     },
+  //     breakpoints: {
+  //       380: {
+  //         slidesPerView: 2.1,
+  //       },
+  //       576: {
+  //         slidesPerView: 2.3,
+  //       }
+  //     }
+  //   });
+  // }
+
+  if ($('.js-postSlider ').length) {
+    $('.js-postSlider ').each(function () {
+      let slider = $(this);
+      let prev = slider.find('.post__slider-button--prev');
+      let next = slider.find('.post__slider-button--next');
+      console.log(slider, prev[0], next);
+      const swiper = new Swiper(slider[0], {
+        slidesPerView: 1.3,
+        spaceBetween: 8,
+        navigation: {
+          nextEl: next[0],
+          prevEl: prev[0],
         },
-        576: {
-          slidesPerView: 2.3,
+        breakpoints: {
+          380: {
+            slidesPerView: 2.1,
+          },
+          576: {
+            slidesPerView: 2.3,
+          }
         }
-      }
-    });
+      });
+    })
   }
 
   // Sticky Sidebar

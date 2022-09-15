@@ -9143,7 +9143,7 @@ body.dark .pagination__list li a.active {
 .post__slider .swiper-slide {
   height: auto;
 }
-.post #postSlider {
+.post .js-postSlider {
   position: relative;
 }
 .post__slider-title {
