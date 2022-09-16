@@ -8285,7 +8285,7 @@ body.dark .popular__item:hover .popular__title {
 }
 .newsblock__img {
   width: 129px;
-  height: 129px;
+  height: 100px;
   -ms-flex-negative: 0;
   flex-shrink: 0;
   margin-right: 17px;
