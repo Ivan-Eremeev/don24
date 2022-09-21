@@ -8114,7 +8114,6 @@ body.dark .header__theme-switch:after {
     display: none;
   }
   .popular > .row {
-    max-height: 120px;
     overflow-x: auto;
   }
 }
