@@ -8115,7 +8115,7 @@ body.dark .header__theme-switch:after {
   }
   .popular > .row {
     max-height: 120px;
-    overflow-y: auto;
+    overflow-x: auto;
   }
 }
 @media (max-width: 575.98px) {
